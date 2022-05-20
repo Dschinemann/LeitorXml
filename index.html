@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="container-input">
+            <input placeholder="seleciona arquivo" id="input-file" type="file" multiple="true" value="Escolher arquivos" accept="text/xml" />
+        </div>
+        <div id="container-produtos">
+            <table data-js="tableExport" id="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Produto</th>
+                        <th>lote</th>
+                        <th>Quantidade</th>
+                        <th>Un. medida</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+            <div style="display: flex; justify-content: space-between;">
+                <h1>Quantidade Total.</h1>
+                <span id="total"></span>
+            </div>
+        </div>
+        <div>
+            <a data-js="export-table-btn" role="button" class="btn" id="button">Exportar</a>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="./script/script.js"></script>
+
+</html>
